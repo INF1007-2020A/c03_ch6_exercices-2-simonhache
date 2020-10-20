@@ -35,7 +35,7 @@ FAIL: test_sort_queue (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 83, in test_sort_queue
     'Mauvaise reponse'
-AssertionError: [] != [24, 80, 139, 160, 170, 433, 467, 532, 534[51 chars] 977] : Mauvaise reponse
+AssertionError: [] != [70, 79, 88, 122, 140, 145, 164, 168, 188,[50 chars] 853] : Mauvaise reponse
 
 ======================================================================
 FAIL: test_sort_stack (__main__.TestExercice)
@@ -43,9 +43,9 @@ FAIL: test_sort_stack (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 68, in test_sort_stack
     'Mauvaise reponse'
-AssertionError: [] != [35, 140, 196, 232, 367, 405, 529, 548, 56[52 chars] 991] : Mauvaise reponse
+AssertionError: [] != [81, 123, 153, 197, 343, 392, 409, 568, 57[52 chars] 978] : Mauvaise reponse
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.001s
+Ran 6 tests in 0.002s
 
 FAILED (failures=4, errors=1)
