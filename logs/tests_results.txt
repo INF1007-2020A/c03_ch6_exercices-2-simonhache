@@ -11,9 +11,9 @@ ERROR: test_delete_stack (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 33, in test_delete_stack
     output = exercice.delete_nth_from_stack(lifo, len(lifo) - 1)
-  File "/home/runner/work/c03_ch6_exercices-2-simonhache/c03_ch6_exercices-2-simonhache/exercice.py", line 19, in delete_nth_from_stack
-    return Stack(data.pop(position))
-AttributeError: 'Stack' object has no attribute 'pop'
+  File "/home/runner/work/c03_ch6_exercices-2-simonhache/c03_ch6_exercices-2-simonhache/exercice.py", line 18, in delete_nth_from_stack
+    newData = [el for el,idx in enumerate(Stack) if idx ]
+TypeError: 'type' object is not iterable
 
 ======================================================================
 ERROR: test_string_and_structs (__main__.TestExercice)
@@ -37,7 +37,7 @@ FAIL: test_sort_queue (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 83, in test_sort_queue
     'Mauvaise reponse'
-AssertionError: [] != [9, 27, 126, 134, 147, 147, 172, 379, 407,[50 chars] 881] : Mauvaise reponse
+AssertionError: [] != [9, 216, 261, 276, 354, 388, 439, 460, 472[51 chars] 797] : Mauvaise reponse
 
 ======================================================================
 FAIL: test_sort_stack (__main__.TestExercice)
@@ -45,9 +45,9 @@ FAIL: test_sort_stack (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 68, in test_sort_stack
     'Mauvaise reponse'
-AssertionError: [] != [44, 83, 186, 194, 306, 413, 415, 475, 493[51 chars] 994] : Mauvaise reponse
+AssertionError: [] != [48, 59, 199, 235, 257, 302, 387, 407, 561[51 chars] 945] : Mauvaise reponse
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.002s
+Ran 6 tests in 0.001s
 
 FAILED (failures=3, errors=2)
