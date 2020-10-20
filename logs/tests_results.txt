@@ -11,9 +11,9 @@ ERROR: test_delete_stack (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 33, in test_delete_stack
     output = exercice.delete_nth_from_stack(lifo, len(lifo) - 1)
-  File "/home/runner/work/c03_ch6_exercices-2-simonhache/c03_ch6_exercices-2-simonhache/exercice.py", line 18, in delete_nth_from_stack
-    newData = [el for el,idx in enumerate(Stack) if idx ]
-TypeError: 'type' object is not iterable
+  File "/home/runner/work/c03_ch6_exercices-2-simonhache/c03_ch6_exercices-2-simonhache/exercice.py", line 19, in delete_nth_from_stack
+    newData = [el for el,idx in enumerate(list(data)) if idx != position]
+TypeError: 'Stack' object is not iterable
 
 ======================================================================
 ERROR: test_string_and_structs (__main__.TestExercice)
@@ -37,7 +37,7 @@ FAIL: test_sort_queue (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 83, in test_sort_queue
     'Mauvaise reponse'
-AssertionError: [] != [9, 216, 261, 276, 354, 388, 439, 460, 472[51 chars] 797] : Mauvaise reponse
+AssertionError: [] != [7, 210, 219, 330, 371, 380, 401, 412, 420[51 chars] 971] : Mauvaise reponse
 
 ======================================================================
 FAIL: test_sort_stack (__main__.TestExercice)
@@ -45,7 +45,7 @@ FAIL: test_sort_stack (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 68, in test_sort_stack
     'Mauvaise reponse'
-AssertionError: [] != [48, 59, 199, 235, 257, 302, 387, 407, 561[51 chars] 945] : Mauvaise reponse
+AssertionError: [] != [35, 39, 99, 134, 246, 332, 338, 377, 409,[50 chars] 918] : Mauvaise reponse
 
 ----------------------------------------------------------------------
 Ran 6 tests in 0.001s
