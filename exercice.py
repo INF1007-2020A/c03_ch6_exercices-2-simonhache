@@ -6,9 +6,6 @@ from structs import Queue, Stack
 
 
 def reverse_data(data: list = None):
-    # TODO: Demander 10 valeurs à l'utilisateur,
-    # les stocker dans une structure de données,
-    # et les retourner en ordre inverse, sans utiliser de liste.
 
     if data is None:
         data = input("Veuillez entrer 10 valeurs")
