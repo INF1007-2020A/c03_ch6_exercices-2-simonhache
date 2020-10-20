@@ -1,9 +1,19 @@
 test_delete_queue (__main__.TestExercice) ... FAIL
-test_delete_stack (__main__.TestExercice) ... FAIL
+test_delete_stack (__main__.TestExercice) ... ERROR
 test_reverse (__main__.TestExercice) ... ok
 test_sort_queue (__main__.TestExercice) ... FAIL
 test_sort_stack (__main__.TestExercice) ... FAIL
 test_string_and_structs (__main__.TestExercice) ... ERROR
+
+======================================================================
+ERROR: test_delete_stack (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 33, in test_delete_stack
+    output = exercice.delete_nth_from_stack(lifo, len(lifo) - 1)
+  File "/home/runner/work/c03_ch6_exercices-2-simonhache/c03_ch6_exercices-2-simonhache/exercice.py", line 19, in delete_nth_from_stack
+    return Stack(data.pop(position))
+AttributeError: 'Stack' object has no attribute 'pop'
 
 ======================================================================
 ERROR: test_string_and_structs (__main__.TestExercice)
@@ -22,20 +32,12 @@ Traceback (most recent call last):
 AssertionError: [] != [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] : Mauvaise reponse
 
 ======================================================================
-FAIL: test_delete_stack (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 38, in test_delete_stack
-    'Mauvaise reponse'
-AssertionError: [] != [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18] : Mauvaise reponse
-
-======================================================================
 FAIL: test_sort_queue (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "test_exercice.py", line 83, in test_sort_queue
     'Mauvaise reponse'
-AssertionError: [] != [70, 79, 88, 122, 140, 145, 164, 168, 188,[50 chars] 853] : Mauvaise reponse
+AssertionError: [] != [9, 27, 126, 134, 147, 147, 172, 379, 407,[50 chars] 881] : Mauvaise reponse
 
 ======================================================================
 FAIL: test_sort_stack (__main__.TestExercice)
@@ -43,9 +45,9 @@ FAIL: test_sort_stack (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 68, in test_sort_stack
     'Mauvaise reponse'
-AssertionError: [] != [81, 123, 153, 197, 343, 392, 409, 568, 57[52 chars] 978] : Mauvaise reponse
+AssertionError: [] != [44, 83, 186, 194, 306, 413, 415, 475, 493[51 chars] 994] : Mauvaise reponse
 
 ----------------------------------------------------------------------
 Ran 6 tests in 0.002s
 
-FAILED (failures=4, errors=1)
+FAILED (failures=3, errors=2)
