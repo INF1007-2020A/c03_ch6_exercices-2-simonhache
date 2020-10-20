@@ -15,7 +15,7 @@ def reverse_data(data: list = None):
 
 
 def delete_nth_from_stack(data: Stack, position: int) -> Stack:
-    newData = [el for el,idx in enumerate(Stack)]
+    newData = [el for el,idx in enumerate(Stack) if idx ]
     return Stack()
 
 
