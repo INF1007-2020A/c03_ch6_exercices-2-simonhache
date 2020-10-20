@@ -46,7 +46,7 @@ def string_and_structs(string: str) -> tuple:
 
 def main() -> None:
     print("On inverse des données...")
-    print(f"Résultat: {reverse_data()}")
+    print(f"Résultat: {reverse_data([1,2,3,4,5,5,6,7,2,1])}")
 
     n = 4
     lifo = Stack()
