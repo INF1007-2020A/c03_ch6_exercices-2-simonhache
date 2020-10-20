@@ -13,7 +13,7 @@ def reverse_data(data: list = None):
     if data is None:
         data = input("Veuillez entrer 10 valeurs")
 
-    reversed_data = None  # Stocker le résultat ici
+    reversed_data = data[::-1]  # Stocker le résultat ici
 
     return reversed_data
 
