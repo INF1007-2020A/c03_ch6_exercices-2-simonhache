@@ -8,8 +8,7 @@ from structs import Queue, Stack
 def reverse_data(data: list = None):
 
     if data is None:
-        data = input("Veuillez entrer 10 valeurs")
-
+        data = input("Veuillez entrer 10 valeurs: ")
     reversed_data = data[::-1]  # Stocker le résultat ici
 
     return reversed_data
